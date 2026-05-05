@@ -35,8 +35,14 @@ Exemple:
 
 def count_vowels(text_chain:str):
     # Write here your code
+    suma_vocales = 0
+    vocales = "aeiouAEIOU"
+    for char in text_chain:
+        if char in vocales:
+            suma_vocales += 1
+    return suma_vocales
     pass
 
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# print(count_vowels("Hello world, this is an example."))
+print(count_vowels("Hello world, this is an example."))
